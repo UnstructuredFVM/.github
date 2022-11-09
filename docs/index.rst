@@ -10,4 +10,4 @@ Say about the project aim and what it contains.
    :maxdepth: 3
    :caption: Contents
 
-   docs/intro
+   intro
