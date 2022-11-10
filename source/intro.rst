@@ -14,9 +14,9 @@ The principal application of this solver is to simulate the re-entry vehicles tr
 Implementation
 ==============
 
-In order to achive parallel computing capabilities the solver is integrated with `OP2 Framework <https://github.com/OP-DSL/OP2-Common>`_. OP2 Framework is an Application Programming Interface (API) which generates parallel code for various computational architectures like ``OpenMP``, ``OpenCL``, ``CUDA``, etc., using a single source code. The generated code can be executed on single/multi core CPU's and GPU's.
+In order to achive parallel computing capabilities the solver is integrated with `OP2 <https://op-dsl.github.io/index.html>`_ Framework. OP2 (Oxford Parallel library for Unstructured mesh solvers) is an Application Programming Interface (API) which generates parallel code for various computational architectures like ``OpenMP``, ``OpenCL``, ``CUDA``, etc., using a single source code. The generated code can be executed on single/multi core CPU's and GPU's.
 
-The solver is developed using automatic code generation techniques similar to `OpenSBLI <https://github.com/opensbli/opensbli>`_. The code is initially written in Python programming language using Symbolic python (SymPy) library to process Einstein formulation of the equations. This python code generates OP2 compliant ``#C`` code which is then translated using OP2 code translator and compiled to generate executable code for different computational architectures.
+The solver is developed using automatic code generation techniques similar to `OpenSBLI <https://opensbli.github.io/>`_. The code is initially written in Python programming language using Symbolic python (SymPy) library to process Einstein formulation of the equations. This python code generates OP2 compliant ``#C`` code which is then translated using OP2 code translator and compiled to generate executable code for different computational architectures.
 
 .. figure:: images/mapping.png
    :scale: 40%
