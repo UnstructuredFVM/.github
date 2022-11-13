@@ -11,9 +11,11 @@ Welcome to uFVM's documentation!
    :maxdepth: 2
    :caption: Contents
 
-   intro
+   introduction
    setup
    sample
+   dev
+
 
 
 
