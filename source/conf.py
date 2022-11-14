@@ -15,9 +15,9 @@ import sphinx_rtd_theme
 
 
 # -- Project information -----------------------------------------------------
-project = 'uFVM'
-copyright = '2022, Vinay R'
-author = 'Vinay Ram'
+project = 'UnstructuredFVM'
+copyright = '2022, Vinay R. Gazula, Satya P. Jammy'
+author = 'Vinay R. Gazula, Satya P. Jammy'
 
 # The short X.Y version
 version = '1.0'
@@ -35,7 +35,6 @@ release = 'latest'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'gh-links',
     'sphinx_rtd_theme',
     'sphinx.ext.mathjax',
     'sphinx.ext.autosectionlabel',
