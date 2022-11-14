@@ -15,8 +15,7 @@ Welcome to uFVM's documentation!
    setup
    sample
    dev
-
-
+   pub
 
 
 Indices and tables

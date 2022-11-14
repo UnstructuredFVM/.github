@@ -66,7 +66,7 @@ After installation, it is recommended that you run the test suite to check that 
    make jac_openmp
    ./jac_openmp
 
-These should print output to the screen like Results check PASSED!. Try this for other applications of jac2, jac1/sp/ etc. If you are still facing any issues while installing OP2 you can refer to this `installation guide <https://github.com/UnstructuredFVM/UnstructuredFVM.github.io/blob/master/docs/installing_op2.pdf>`__.
+These should print output to the screen like Results check PASSED!. Try this for other applications of jac2, jac1/sp/ etc. If you are still facing any issues while installing OP2 you can refer to this `Installation Guide <https://unstructuredfvm.github.io/docs/installing_op2.pdf>`_.
 
 
 Dependencies
@@ -76,6 +76,9 @@ Dependencies
 
    Should finalize and add the dependencies that we have.
 
+
+
+.. _clonesolver:
 
 Cloning the Solvers
 -------------------

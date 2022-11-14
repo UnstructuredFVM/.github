@@ -24,3 +24,9 @@ The solver is developed using automatic code generation techniques similar to `O
    Fig.1: Automatic Code Generation Schematic
 
 
+.. _contact:
+
+Contact
+-------
+
+Contact Us @ .........

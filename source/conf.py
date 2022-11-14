@@ -9,7 +9,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('_extensions'))
+#sys.path.insert(0, os.path.abspath('_extensions'))
 
 import sphinx_rtd_theme
 
@@ -20,7 +20,7 @@ copyright = '2022, Vinay R. Gazula, Satya P. Jammy'
 author = 'Vinay R. Gazula, Satya P. Jammy'
 
 # The short X.Y version
-version = '1.0'
+#version = '1.0'
 # The full version, including alpha/beta/rc tags
 release = 'latest'
 
@@ -34,12 +34,7 @@ release = 'latest'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-    'sphinx_rtd_theme',
-    'sphinx.ext.mathjax',
-    'sphinx.ext.autosectionlabel',
-    'sphinx.ext.todo',
-]
+extensions = ['sphinx_rtd_theme']
 
 # Enable rendering of TODOs
 todo_include_todos = True
@@ -72,8 +67,8 @@ master_doc = 'index'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-#exclude_patterns = []
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build']
+#exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 #pygments_style = None
@@ -83,14 +78,14 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#
 html_theme = 'sphinx_rtd_theme'
+
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#
 # html_theme_options = {}
+
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -113,34 +108,38 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'uFVMdoc'
 
+# If true, “Created using Sphinx” is shown in the HTML footer. Default is True.
+html_show_sphinx = False
+
 
 # -- Options for LaTeX output ------------------------------------------------
 
+latex_engine = 'pdflatex'
+
+
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
+    #The paper size ('letterpaper' or 'a4paper').
 
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
+    'papersize': 'letterpaper',
 
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
+    #The font size ('10pt', '11pt' or '12pt').
 
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
+    'pointsize': '10pt',
+
+    #Additional stuff for the LaTeX preamble.
+
+    'preamble': '',
+
+    #Latex figure (float) alignment
+
+    'figure_align': 'htbp',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-#latex_documents = [
-    #(master_doc, 'OP2.tex', 'OP2 Documentation',
-     #'Gihan Mudalige, Istvan Reguly, Mike Giles', 'manual'),
-#]
+
+latex_documents = [(master_doc, 'uFVM.tex', 'uFVM Documentation', author, 'manual', False)]
 
 
 # -- Options for manual page output ------------------------------------------
@@ -168,7 +167,7 @@ latex_elements = {
 # -- Options for Epub output -------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = project
+#epub_title = project
 
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
@@ -184,3 +183,12 @@ epub_title = project
 
 
 # -- Extension configuration -------------------------------------------------
+
+extensions.append('sphinx.ext.todo')
+extensions.append('sphinx.ext.autodoc')
+extensions.append('sphinx.ext.autosummary')
+extensions.append('sphinx.ext.intersphinx')
+extensions.append('sphinx.ext.mathjax')
+extensions.append('sphinx.ext.viewcode')
+extensions.append('sphinx.ext.graphviz')
+extensions.append('sphinx.ext.autosectionlabel')
